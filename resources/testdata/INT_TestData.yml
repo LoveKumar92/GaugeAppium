@@ -1,0 +1,653 @@
+ProjectName: MindTap
+SSO_TOKEN_URL: https://int-ws.cengage.com/ssows/rest/getToken
+cb_url: https://int-login.cengagebrain.com/cb/
+sso_token_url_new: https://int-ws.cengage.com/ssows/rest/getToken
+PRODUCT_URL: https://mindtap-int.cengage.com/nb/service/launch
+base_url: https://mindtap-int.cengage.com/static/nb/login.html
+environment: https://mindtap-int.cengage.com
+sso_url: https://int-login.cengage.com/cb/
+mtEvo: https://mindtap-int.cengage.com/static/nb/ui/evo/index.html?snapshotId=
+jsessionURL: https://int-login.cengagebrain.com/cb/login.htm
+ApiProductUrl: "https://mindtap-int.cengage.com"
+jsessionURLCourseCreate: https://int-instructor.cengage.com/ssoinstructor/dologin.htm?method=login&token=
+ssoInstructorUrl: "https://int-instructor.cengage.com"
+ssoLoginToken: https://int-www.cengage.com/api/v1/token
+USDashboard: https://int-login.cengagebrain.com/cb/regionCookie.htm
+lmsdashboardUrl: https://cengage.instructure.com/login/canvas
+studentDashboardURL: https://int-www.cengage.com/dashboard?token=
+courseConfirmation: "https://int-www.cengage.com/dashboard/#/course-confirmation/"
+deleteCourse: "https://int-instructor.cengage.com/ssoinstructor/manageCourseKey.htm?method=confirmDeleteCourse&contextId="
+hostname: abc
+lcs_url: https://lcs-v2-int.cengage.info
+lcs_deployer_url: https://lcs-deployer-int.cengage.info
+courseService_url : https://courseservices-v2-int.cengage.info
+
+users:
+  admin:
+    username: Mindtap_Admin@swlearning.com
+    password: Password1
+  instructor:
+    Name: Instructor Automation
+    username: inst_MTV@swlearning.com
+    password: A111111
+  instructor1:
+    username: AutomationAdmin003@swlearning.com
+    password: A111111
+    Name: Automation _Instructor INT
+  student:
+    Name: student qad
+    username: student_april_2016@swlearning.com
+    password: A111111
+  student1:
+    fullName: AutomationStudent INT
+    username: AutomationStudent@swlearning.com
+    password: A111111
+  TA:
+    username: kj.stud@qaittest.com
+    password: A111111
+  vendor:
+    username: mt_automation1@swlearning.com
+    password: A111111
+  productionUser:
+      username: productionmindtap@gmail.com
+      password: tester
+  editor:
+      username: mt_automation@swlearning.com
+      password: A111111
+  reviewer:
+      username: mt_inst_automation3@swlearning.com
+      password: A111111
+  courseCare:
+      username: kz.inst@swlearning.com
+      password: A111111
+  coInstructor:
+      username: inst24_mtx_240615@qaittest.com
+      password: A111111
+  database:
+      username: test
+      password: test
+
+Books:
+    master:
+        masterName: Automation master Test Book
+        unitName: Test:The Beginning of the End
+        description: Created by automation script
+        coreTextISBN: 9781133314677
+        mode1: course
+        mode2: reader
+        ProvisionAppsRegistry:
+            assignmentAppProvision: Assignment
+            algAppProvision: ALG
+        Vandelay-Sync-Master:
+            masterName: "Beatty: Business Law and the Legal VT"
+            coreTextISBN: 9781305389892
+            ssoISBN: 4321543215432
+            snapshotId: 54828
+            userId: 11515
+            course_Cgi: TJRTP4XKW6QKMZD5X437 
+            ndf_Cgi: PSWCXNC1EHQ0YKX9L733
+            checkpoint_Id: 
+            Check_Vandelay_Sync_Activity:
+               chapterId: KMMYST621811945    
+    course:
+        courseName: Test_Automation
+        coreTextISBN: 9780538453059
+        ISBN: 9781133354017
+        courseKey: MTPQZ93PNB7J
+        appName: atp
+        QuestionCount: 100
+        AttemptQueCount: 6
+        customUnit: Automation Test Unit
+        customUnitEdit: Automation Test Unit Edit
+        customFolder: Automation Test Folder
+        customFolderEdit: Automation Test Folder Edit
+        customUnitDescription: Unit Created By Automation Script
+        customUnitDescriptionEdit: Unit Created By Automation Script Edit
+
+    courseHealth:
+        courseName: MTEvo_Int_23rdFeb
+        courseDates: 02/27/2017 - 03/23/2018 (EST)
+        imageSrc: http://mindtap-int.cengage.com/nbreader/service/Contents/9781418072520/coverImage/isbn13.jpg
+        coreTextISBN: 9781418072520
+        ISBN: 9781133354215
+        courseKey: MTPNQQMPN4Q4
+        classicAppNames: "RSS Feed,Full Book,ReadSpeaker,Merriam-Webster's Dictionary,Progress,Glossary,StudyHub,Diet & Wellness Plus,ConnectYard,Flashcards,Questia"
+        appNames: "Kaltura,Google Drive,Flashcards,RSS Feed,WebVideo Search,Web Link Activity,Writing Activity - Test,Questia"
+        AppsDescription: "Add Kaltura Media as a Learning Activity:Add Document, Excel Sheet, PDF, Presentation.:Add flashcards for chapter review:Add a RSS Feed Activity:Search for a Web Video from YouTube and add it as an Activity:Add up to 5 links to external websites.:Search for a location on the map and add it as an Activity:Add a Questia activity"
+        ACnowPracticeActivity: ACnowPracticeActivity
+        activity5: "Chapter 5: Test"
+        activity1: Introduction to Medical Terminology
+        activity2: The Human Body in Health and Disease
+        activity3: The Skeletal System
+        attemptAssignmetActivity: "Assignment 3"
+        nonattemptAssignmentActivity: "Assignment 2"
+        mindtapABattempted: "MindtapABAttempted"
+        mindtapABnonattempted: "MindtapABUnattempted"
+        MindtapABUnattemptedCHANGE: "MindtapABUnattemptedCHANGE"
+        nonAssignmentActivity: "Flashcard 1"
+        activity4: "Special Senses: The Eyes and Ears"
+        activity6: "Chapter 3: Test"
+        activity7: "Chapter 9: Homework (4 parts)"
+        activity8: The Muscular System
+        activity9: "Skin:The Integumentary System"
+        activity10: "The Cardiovascular System"
+        activity11: "Chapter 6: Homework"
+        activityDueDate: The Cardiovascular System
+        shiftDate: "Chapter 9: Homework (4 parts)"
+        readerModeCourse5: "Chapter 1: Introduction and Overview"
+        activityReader: "Chapter 1: Fundamentals"
+        chapter2Flascard: "CHAPTER 2 Flashcards"
+        chapter4: "CHAPTER 4:"
+        chapter13: "CHAPTER 13:"
+        activityLastOV: "Unit 1: Unit Overview"
+        activityLock: "Chapter 3: Homework (4 parts)"
+        Ztest: ZTest.LTI LTI
+        dueDate: 22
+        activity15: "CHAPTER 15:"
+        NonScoreAbleDescription: "CHAPTER 6: The Lymphatic and Immune Systems"
+        CourseStartDate: FEB 27
+        CourseEndDate: MAR 24
+        activityScheduleDate: 14
+        sot: SOT
+        svr: SVR
+        nonMtActivity: NonMindTap
+        StartMondayEndSunday: MAR 6 - MAR 12
+        Week9: APR 24 - APR 30
+        Week51: FEB 12 - FEB 18
+        LastWeek: Week 56
+        Activity18 : RSS Feed
+        ActivityName: Kaltura,Google Drive,Flashcards,RSS Feed,WebVideo Search,Web Link Activity,Map Activity,ZTest LTI Activity - ZTest.LTI,ZTest Continuous - ZTest.LTI,ZTest LTI Generic - ZTest.LTI,ZTest Editable - ZTest.CLUI,ZTest Activity - ZTest.CLUI,Cancel,Questia
+        AdminActivityName: Reading Activity,Assignable Activity,Media Activity,Kaltura,Google Drive,Flashcards,RSS Feed,WebVideo Search,Web Link Activity,Create First Profile,Track Activity,Track Diet,Track Change,Map Activity,ZTest LTI Activity - ZTest.LTI,ZTest Continuous - ZTest.LTI,ZTest LTI Generic - ZTest.LTI,Downloadable File,ZTest Editable - ZTest.CLUI,ZTest Activity - ZTest.CLUI,Cancel,Questia
+        Activity19: "Chapter 2:"
+        Activity20: Planning and Goal Setting
+        chapter1 : An Overview of Financial Management
+        BEActivity1: BE Activity1
+        BEActivity2: BE Activity2
+        BE_HW_Activity1: BE_HW_Activity1
+        BE_HW_Activity2: BE_HW_Activity2
+        flashcard7activity: FlashActivity
+        activity31: Managing in a Global Environment
+        BE_HW_Inline_Activity1: BE_HW_Inline_Activity1
+        BE_HW_Inline_Activity2: BE_HW_Inline_Activity2
+        BE_HW_Inline_Activity3: BE_HW_Inline_Activity3
+        DaftDistinctActivity : "Introduction to MindTap"
+        Introduction to MindTap :
+           activityID: "13760021"
+        PracticeActivity :
+           activityID: "13760022"
+        practiceActivityRWV: PracticeActivity
+        readerActivity: "Chapter 1: An Overview of Financial Management"
+
+    UserLogin:
+        CourseAutomationInst : MT Automation
+        OriginalDashboardInst : Ritesh Instructor001
+        CourseHealthInst  : instructor automation
+        StudentDaft : student1 2016
+        InstructorDaft  : Love Instructor
+
+    courseATP:
+        courseName: ATP_Automation
+        coreTextISBN: 9781285165875
+        ISBN: 9781285852430
+        courseKey: MTPQR7CP3GFM
+
+
+   
+    courseDaft:
+        courseName: courseDaft
+        coreTextISBN: 9781285861982
+        ISBN: 9781285871868
+        courseKey: MTPPZCBP3FSQ
+
+    courseAnderson:
+         courseName: CourseAnderson
+         coreTextISBN: 9781285431321
+         ISBN: 9781305493032
+         courseKey: MTPNXPZPQS2H
+
+    CourseFinanceQuickSmoke:
+        courseName: INTCnowQuickSmoke
+        coreTextISBN: 9780538482127
+        ISBN: 9781133998945
+        courseKey: MTPQQ2QPZJHZ
+        pid: 465348
+        activityname: FlashActivity
+        parentId: 6316292
+        snapshotId: 44178
+        cnowHealthCheckActivity: ACNow AutomationSmoke
+        activityId: 6316297
+        instructor:
+            fullName: Automation _Instructor INT
+            username: AutomationAdmin003@swlearning.com
+            password: A111111
+            Highlight: "{\"pageX\":306,\"pageY\":206,\"startCoords\":{\"x\":69,\"y\":205},\"canonicalOrder\":null,\"mouseDragged\":true,\"isQuicknote\":false,\"highlights\":[],\"startOffset\":0,\"endOffset\":29,\"selectedText\":\"In 1776, Adam Smith described\",\"annotationAction\":\"new\",\"highlight\":false,\"positionRelativeElementId\":\"NPPDMX351370220\",\"parentElementId\":\"NPPDMX351370220\",\"positionStartElementId\":\"NPPDMX351370220\",\"positionEndElementId\":\"NPPDMX351370220\",\"positionCharacterStart\":0,\"positionCharacterEnd\":29,\"nbSnapshotId\":44178,\"userId\":16445,\"bookId\":\"9780538482127\",\"chapterId\":\"KDMZGG402403075\",\"chapterSequence\":15000000,\"chapterTitle\":\"Chapter 1: An Overview of Financial Management\",\"sectionId\":\"IKSWWA349909772\",\"sectionSequence\":15000008,\"sectionTitle\":\"Putting Things in Perspective\",\"sectionLabel\":null,\"elementId\":\"IKSWWA349909772\",\"class\":\"com.cengage.nextbook.ereader.annotations.CharacterSpanAnnotation\",\"type\":\"highlight\",\"renderData\":\"{\\\"color\\\":\\\"orange\\\"}\",\"annotationColor\":\"orange\",\"isInstructorShared\":true,\"pathId\":6316291,\"activityId\":6316297,\"appId\":1,\"createdByUserId\":16445,\"actionsToOmit\":[]}"
+            TestNotes: "{\"nbSnapshotId\":44178,\"userId\":16445,\"bookId\":\"9780538482127\",\"chapterId\":\"KDMZGG402403075\",\"chapterTitle\":\"Chapter 1: An Overview of Financial Management\",\"sectionId\":\"IKSWWA349909772\",\"sectionTitle\":\"Putting Things in Perspective\",\"class\":\"com.cengage.nextbook.ereader.annotations.MarginMarkAnnotation\",\"type\":\"QuickNote\",\"canonicalOrder\":\"\",\"positionRelativeElementId\":\"NPPDMX351370220\",\"positionStartElementId\":\"NPPDMX351370220\",\"positionEndElementId\":\"NPPDMX351370220\",\"positionType\":\"BEFORE_ELEMENT\",\"positionCharacterStart\":0,\"positionCharacterEnd\":29,\"renderData\":\"{\\\"note\\\":\\\"Shared Note\\\",\\\"color\\\":\\\"orange\\\",\\\"appHeight\\\":\\\"100%\\\",\\\"appWidth\\\":\\\"100%\\\",\\\"actionURI\\\":\\\"/static/nbapps/notepad/addNote.ejs\\\",\\\"mode\\\":\\\"INLINE\\\",\\\"annotationContainerId\\\":\\\"ebook_container\\\",\\\"pageXOffset\\\":0}\",\"selectedText\":\"In 1776, Adam Smith described\",\"confirmText\":\"Note saved and added to Notebook\",\"isInstructorShared\":true,\"activityId\":6316297,\"appId\":1,\"createdByUserId\":16445,\"pathId\":6316292,\"visible\":true}"
+        student:
+            fullName: AutomationStudent INT
+            username: AutomationStudent@swlearning.com
+            password: A111111
+            
+    CourseStudyHubSmoke:
+        courseName: CourseStudyHubSmoke
+        coreTextISBN: 9781418072520
+        ISBN: "9781133354215"
+        courseKey: "MTPP184PQB0G"
+        hoverColor: "#007db8"
+        disabledColor: "#dfdfdf"
+        instructor:
+            fullName: Automation _Instructor INT
+            username: AutomationAdmin003@swlearning.com
+            password: A111111
+
+    CourseGradebook:
+        courseName: GradeBookAutomationInt
+        coreTextISBN: 9781285421230
+        ISBN: 9781285778976
+        courseKey: MTPQ5MHPQ7XF
+        settings-background-color: "#ececec"
+        userInstructor:
+            fullName: Instructor Automation
+            username: inst_automation@swlearning.com
+            password: A111111
+
+    courseOV:
+        courseName: courseOV
+        coreTextISBN: 9781285421230
+        ISBN: 9781285778976
+        courseKey:  MTPNQLRPZLJ7
+        batchEditActivityName: Flashcard 1
+        courseEndDate:
+          date: 17
+          month: April
+          year: 2022
+        latepenaltytimestamp: "11:05 PM"
+        instructor:
+            fullName: Instructor Automation
+            username: inst_automation@swlearning.com
+            password: A111111
+
+    courseRWV:
+        courseName: courseRWV
+        coreTextISBN: 9781133314677
+        ISBN: 9781133314653
+        courseKey:  MTPNJ01PZJWM
+        instructor:
+            username: deepthig2020@gmail.com
+            password: A123456
+
+    CourseAutomation:
+        courseName: CourseQAAutomation
+        coreTextISBN: 9781305634350
+        ISBN: "9781305634428"
+        courseKey: MTPPTKPP551G
+        OneDriveSmokeActivity: doc+doc
+        key6: https://college.cengage.com/nextbook/shared/art_and_humanities/kleiner_9781337630702/images/ddlb_0001_0001_0_img0004-t2.jpg
+        def7: "Fig. 11-2: Pair of Merovingian looped fibulae, from Jouy-le-Comte, Francemid-sixth century  Silver gilt worked in filigree, with inlays of garnets and other stones"
+        key7: https://college.cengage.com/nextbook/shared/art_and_humanities/kleiner_9781337630702/images/ddlb_0001_0001_0_img0005-t2.jpg
+        def6: "Fig. 11-1: Chi-rho-iota (XPI) page, folio 34 recto of the Book of Kells, probably from Iona, Scotlandlate eighth or early ninth century  Tempera on vellum"
+        key1: Keyword1
+        key2: Keyword2
+        order: 0
+        def1: This is for testing
+        def2: This is 2nd word
+        ImageActivity: "ADUMBI003637072"
+        FutureActivity: "ADUMBI003637072"
+        FlashMediaActivity: "XALLYE160330435"
+        VideoActivity: "EHTJCE297943720"
+        VideoMediaActivity: "EHTJCE297943720"
+        FlashActivity: 
+            chapterID: UBWTWH723899809
+            heading: Introduction to Medical Terminology
+        chapter1:
+           name: "CHAPTER 1: \\nIntroduction to Medical Terminology"
+           chapterId: "HNTKCM443022700"
+           sectionId: "PLVLFF224522675"
+           appId: 5
+           pathId: 6244965
+           positionRelativeElementId: TDEHEN596014738
+           activityId: 14855715
+           positionRelativeOrder: 1
+        chapter6:
+           name: "CHAPTER 6: \\nThe Lymphatic and Immune Systems"
+           chapterId: "WWOTAZ078431878"
+           sectionId: "OSRZAH346588076"
+           appId: 5
+           pathId: 6244965
+           positionRelativeElementId: VPHUMU335359976
+           activityId: 6245003
+           positionRelativeOrder: 0
+        instructor: 
+            fullName: Automation _Instructor INT
+            username: AutomationAdmin003@swlearning.com
+            password: A111111
+            userID : 16445
+        student: 
+            fullName: Automation, Student
+            username: student_courseqaautomation@swlearning.com
+            password: A111111
+            userID: 19507
+        student2:
+            fullName: Student Automation
+            username: stuautomation001@swlearning.com
+            password: A111111
+            userID: 14856
+        pid: 534044
+        parentId: 13732088
+        activityname: FlashcardActivity
+        OrderWitinTopic TopValue: 0
+        OrderWitinTopic SecondValue: 2
+        OrderWitinTopic LastValue: 17
+        CnowPracticeToipicTop: 11732473
+        CnowAppAssociatedToipic: 11731313
+        InlineActivities : Kaltura,Google Drive,Inline RSS Feed,WebVideo Search,Web Link Activity,Embedded Map,Microsoft OneDrive
+        AsociatedTopicTopValue: 5494650
+        NewFolder: 5668396
+        NewUnit: 5668397
+        CnowAssociatedToipicTop: 6345295
+        CnowAssociatedToipicTopNew: 7131101
+        CnowAssociatedToipicRegression: 11296687
+        RssAssociatedTopicTop:  5588367
+        UnitEmpty: 6373584
+        OlderUnit: 6373136
+        OlderFolder: 6373018
+        CHAPTER 1: 5588368
+        TopLevel: 6373015
+        Recipient: Student Automation
+        TOC_Link: " The Body Planes "
+        InvalidLinkMsg: The download link you are attempting to add is dysfunctional/invalid. Please check your link source and/or try to add a working link.
+        HttpLinkMsg: The download link you are attempting to add is an http link, and might therefore be unsecure. Click "Yes" to proceed, if you are confident that the downloadable content at this link is trusted/secure.
+        HttpsLinkMsg: The download link you are attempting to add does not have a valid SSL (security) certificate. Click "Yes" to proceed, if you are confident that the downloadable content at this link is trusted/secure.
+        HttpLinkLaunchMsg: The download link you are attempting to view is an http link, and might therefore be unsecure. Click "Yes" to proceed, if you are confident that the downloadable content at this link is trusted/secure. Alternatively, you might wish to copy and paste the link into a secure/incognito browser window, and launch it from there, or check with your Instructor, if you are worried.
+        HttpsLinkLaunchMsg: The download link you are attempting to add does not have a valid SSL (security) certificate. Click "Yes" to proceed, if you are confident that the downloadable content at this link is trusted/secure. Alternatively, you might wish to copy and paste the link into a secure/incognito browser window, and launch it from there, or check with your Instructor, if you are worried.
+        FileWithHttpLinkActivity: FileWithHttpLink
+        FileWithHttpsLinkActivity: FileWithHttpsLink
+        FileWithValidHttpsLinkActivity: FileWithValidHttpsLink
+        YSUAssociatedTopic: 10667928
+        snapshotId: 44533
+        The Human Body in Health and Disease2-1:
+          activityId: 6244986
+          chapterId: "PPWKNI929284051"
+          chapterTitle: "CHAPTER 2: \\nThe Human Body in Health and Disease"
+          sectionId: "UENQZA551034574"
+          sectionLabel: "2-1"
+          sectionTitle: "Chapter Introduction"
+          sequence: 15000008
+        The Skeletal System3-2:
+          activityId: 6244989
+          chapterId: "SDRHVM973035060"
+          chapterTitle: "CHAPTER 3: \\nThe Skeletal System"
+          sectionId: "ZWSPAF915876250"
+          sectionLabel: "3-3c"
+          sectionTitle: "3-3c: \\nSynovial Joints"
+          sequence: 17000573
+        OneDriveActivity:
+           fileIdDemoDocx: 6EBCAF5392EDD2E4!589
+           oneDriveDistinctActivity: Demo.docx
+           InlineOneDriveActivity: Demo.docx
+           
+    CourseBookmarkFunctional:
+        chapter1 : An Overview of Financial Management
+
+    CourseWL:
+          courseName: CourseWL
+          coreTextISBN: 9781305278318
+          ISBN: "9781305278349"
+          pid: 538571
+          courseKey: MTPPPQ3P55D6
+          snapshotId: 63635
+          BEActivity1: R1-1 Module introduction
+          BEActivity2: R1-3 Avant de commencer (Ready?)
+          BEActivity3: Module 1 Flashcards
+          batchEditSettingSuccessMsg: Settings have been updated    
+          batchEditSettingsFailureMsg: The following 1 out of 2 activities could not be adjusted as you requested. Please review the list below, and update them individually. Module 1 Flashcards    
+          WLActivity_MicroQuiz:
+            activityID: 8564948
+          G10-105 Micro Quiz:
+            activityID: 7257295
+          instructor: 
+            fullName: Automation _Instructor INT
+            username: AutomationAdmin003@swlearning.com
+            password: A111111
+          student: 
+            fullName: Student, Automation,
+            Name: Automation, Student
+            username: stuautomation001@swlearning.com
+            password: A111111
+            userID: 14856
+    
+    CourseBatchEditRegression_2:
+      courseName: CourseBatchEditRegression_3
+      coreTextISBN: 9781285421230
+      ISBN: "9781305492844"
+      courseKey: MTPQPHTP5VTQ
+      parentId: 13756882
+      folder: 13902888
+      unit: 13902950
+      snapshotId: 63764
+      pid: 524722
+      batchEditActivityName: Flashcard 1
+      latepenaltytimestamp: "9:35 AM"
+      extendedDueDateActivity: Assignment 01(Do_Not_Delete)
+      submittedActivity: SubmittedActivity
+      inProgressActivity: InProgressActivity
+      BEActivity1: BE Activity1
+      BEActivity2: BE Activity2
+      BE_HW_Activity1: BE_HW_Activity1
+      BE_HW_Activity2: BE_HW_Activity2
+      BE_HW_Activity3: BE_HW_Activity3
+      BE_HW_Inline_Activity1: BE_HW_Inline_Activity1
+      BE_HW_Inline_Activity2: BE_HW_Inline_Activity2
+      BE_HW_Inline_Activity3: BE_HW_Inline_Activity3
+      downloadableFileSmoke: My First Heading
+      instructor: 
+        fullName: Automation _Instructor INT
+        username: AutomationAdmin003@swlearning.com
+        password: A111111
+      student:
+         fullName: AutomationStudent INT
+         username: AutomationStudent@swlearning.com
+         password: A111111
+      TA:
+        fullName: evo student
+        username: stuevoautomation001@swlearning.com
+        password: A111111
+      courseEndDate:
+        date: '2'
+        month: February
+        year: 2025  
+        
+    CourseBatchEditFunctional:
+        courseName: CourseBatchEditFunctional
+        coreTextISBN: 9781418072520
+        ISBN: "9781305634428"
+        courseKey: "MTPP032P3V66"
+        instructor: 
+           fullName: Automation _Instructor INT
+           username: AutomationAdmin003@swlearning.com
+           password: A111111    
+           
+    CourseBatchEditRegression:
+        courseName: CourseBatchEditRegression
+        coreTextISBN: 9781305634350
+        ISBN: "9781305634428"
+        courseKey: "MTPNXN4PXG5W"
+        snapshotId: 63645
+        parentId: 13732130
+        activityname: FlashActivity
+        RssActivity: "RssFeed_Automation"
+        batchEditActivityName: Flashcard 1
+        BEActivity1: BE Activity1
+        BEActivity2: BE Activity2
+        BE_HW_Activity1: BE_HW_Activity1
+        BE_HW_Activity2: BE_HW_Activity2
+        BE_HW_Activity3: BE_HW_Activity3
+        BE_HW_Inline_Activity1: BE_HW_Inline_Activity1
+        BE_HW_Inline_Activity2: BE_HW_Inline_Activity2
+        BE_HW_Inline_Activity3: BE_HW_Inline_Activity3
+        pid : 534044 
+        ActivityToTestBatchEditHideShow: 
+            chapterId: REFLUU472403540
+            heading: Innovative Management for a Changing World
+        instructor: 
+           fullName: Automation _Instructor INT
+           username: AutomationAdmin003@swlearning.com
+           password: A111111
+           userId: 11515
+        student: 
+          fullName: AutomationStudent INT
+          username: AutomationStudent@swlearning.com
+          password: A111111
+            
+    Course_BatchEdit_Regression:
+        courseName: Course_BatchEdit_Regression
+        coreTextISBN: 9781285421230
+        ISBN: "9781285778976"
+        courseKey: MTPPKKSP53NF
+        pid: 483129
+        snapshotId: 63640
+        parentId: 13731920
+        order: 0
+        appActivityName: Cengage.Outline.Speech/activities/SOT
+        AutomationActivityForBE:
+             name: AutomationActivityForBE
+             refId: 838
+             gradable: true
+             description: This is for batch edit testing
+        AutomationPracticeActivityForBE:
+             name: AutomationPracticeActivityForBE
+             refId: 839
+             gradable: false
+             description: This is for batch edit testing
+        Introduction_to_MindTap:
+             activityID: "15542005"
+        PracticeActivity:
+             activityID: "13760022"
+        instructor: 
+           fullName: Automation _Instructor INT
+           username: AutomationAdmin003@swlearning.com
+           password: A111111
+           
+    CourseBatchEditRegression_1:
+        courseName: CourseBatchEditRegression_1        
+        coreTextISBN: 9781285421230
+        ISBN: "9781285778976"
+        courseKey: MTPPC9QPG47P
+        parentId: 13732004
+        folder: 13760023
+        unit: 13760026
+        snapshotId: 63642
+        pid: 483129
+        order: 0
+        appActivityName: Cengage.Outline.Speech/activities/SOT
+        batchEditActivityName: Flashcard 1
+        latepenaltytimestamp: "9:35 AM"
+        extendedDueDateActivity: Assignment 01(Do_Not_Delete)
+        submittedActivity: SubmittedActivity
+        inProgressActivity: InProgressActivity
+        BEActivity1: BE Activity1
+        BEActivity2: BE Activity2
+        BE_HW_Inline_Activity1: BE_HW_Inline_Activity1
+        BE_HW_Inline_Activity2: BE_HW_Inline_Activity2
+        BE_HW_Inline_Activity3: BE_HW_Inline_Activity3
+        downloadableFileSmoke: My First Heading
+        Introduction_to_MindTap:
+             activityID: "13811822"
+             activity: "Introduction to MindTap"
+        practiceActivityRWV:
+             activityID: "13760022"
+             activity: "PracticeActivity"
+        BE_HW_Activity1: 
+             name: BE_HW_Activity1
+             refId: 840
+             gradable: true
+             description: This is for batch edit testing
+        BE_HW_Activity2: 
+             name: BE_HW_Activity2
+             refId: 841
+             gradable: true
+             description: This is for batch edit testing
+        BE_HW_Activity3: 
+             name: BE_HW_Activity3
+             refId: 842
+             gradable: true
+             description: This is for batch edit testing
+        instructor: 
+           fullName: Automation _Instructor INT
+           username: AutomationAdmin003@swlearning.com
+           password: A111111
+        student: 
+           fullName: AutomationStudent INT
+           username: AutomationStudent@swlearning.com
+           password: A111111
+        TA:
+            fullName: Instructor Automation
+            username: inst_automation@swlearning.com
+            password: A111111
+        courseEndDate:
+            date: '20'
+            month: February
+            year: 2023     
+                
+    apliaCourse:
+        courseName: "courseAplia"
+        courseKey: MTPNQGHPGSV0
+        coreTextISBN: 9781285165929
+        ISBN: 9781285853482
+        instructor:
+            fullName: Automation _Instructor INT
+            username: AutomationAdmin003@swlearning.com
+            password: A111111
+        student:
+            fullName: AutomationStudent INT
+            username: AutomationStudent@swlearning.com
+            password: A111111         
+          
+    CourseFlashcardSmoke:
+        courseName: INTCnowQuickSmoke
+        coreTextISBN: 9780538482127
+        ISBN: 9781133998945
+        courseKey: MTPQQ2QPZJHZ
+        pid: 465348
+        FlashActivity: 
+          chapterID: UPAFUQ314114888
+          heading: Financial Markets and Institutions
+        parentId: 6316292
+        key1: Keyword1
+        key2: Keyword2
+        def1: This is for testing
+        def2: This is 2nd word
+        cnowHealthCheckActivity: ACNow AutomationSmoke
+        instructor:
+            fullName: Automation _Instructor INT
+            username: AutomationAdmin003@swlearning.com
+            password: A111111
+        student:
+            fullName: AutomationStudent INT
+            username: AutomationStudent@swlearning.com
+            password: A111111
+            
+    NMASmokeCourseINT:
+        courseName: NMASmokeCourseINT
+        coreTextISBN: 9781285421230
+        ISBN: 9781285778976
+        courseKey: MTPNSPDPG7Q5
+        pid: 483129
+        parentId: 14995671
+        appActivityName: Cengage.non-mt-activity/activities/non-mt-activity
+        order: 0
+        NonMindTapActivitySmoke:
+           nMARefId: mtos67388-a618dd37-39df-47c5-99c0-86ac36425d3e
+           gradable: true
+           score: 100
+        instructor:
+            fullName: Automation _Instructor INT
+            username: AutomationAdmin003@swlearning.com
+            password: A111111
+        student:
+            fullName: AutomationStudent INT
+            username: AutomationStudent@swlearning.com
+            password: A111111
+
+JunkHeaders: JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLargeSizeHeaders-JunkHeadersValueToMakeLar
+JunkHeaderValue: JunkHeader
+JunkHeader10BytesValue: JunkHeader
