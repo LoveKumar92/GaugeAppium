@@ -13,7 +13,6 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import com.gauge.appium.utility.TestUtil;
 import com.thoughtworks.gauge.AfterSpec;
-import com.thoughtworks.gauge.BeforeSpec;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -29,8 +28,8 @@ public class TestBase {
 	
 	private TestBase() {
 		try {
-			setYamlFilePath();
 			intializeConfigFile();
+//			setYamlFilePath();
 			AndroidInitialization();
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
@@ -67,7 +66,7 @@ public class TestBase {
         capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.google.android.youtube");
     	capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,"com.google.android.apps.youtube.app.WatchWhileActivity");
 		driver = new AndroidDriver<AndroidElement>(new URL(prop.getProperty("appiumServerAddress")), capabilities);
-		driver.manage().timeouts().implicitlyWait(TestUtil.getImplicitTime(), TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		TestUtil.log("[INFO]: Connected");
 		return driver;
 	}
@@ -91,7 +90,6 @@ public class TestBase {
 		return prop;
 	}
 	
-	@BeforeSpec
 	public static TestBase getInstance() {
 		if (testBase == null) {
 			testBase = new TestBase();

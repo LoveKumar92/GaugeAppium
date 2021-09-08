@@ -21,15 +21,15 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 	public class TestUtil {
 		
 		public static TestBase testBase= TestBase.getInstance();
-		private AndroidDriver<AndroidElement> driver = testBase.getDriver();
-		private static Properties prop = testBase.getConfig();
-		private static  int IMPLICIT_WAIT;
-		private static String Environment;
+		public AndroidDriver<AndroidElement> driver = testBase.getDriver();
+		public static Properties prop = testBase.getConfig();
+		public static int IMPLICIT_WAIT = Integer.valueOf(prop.getProperty("Implicit_time"));
+		public static String Environment;
 		
-		public static int getImplicitTime() {
-			IMPLICIT_WAIT = Integer.valueOf(prop.getProperty("Implicit_time"));
-			return IMPLICIT_WAIT;	
-		}
+//		public static int getImplicitTime() {
+//			IMPLICIT_WAIT = Integer.valueOf(prop.getProperty("Implicit_time"));
+//			return IMPLICIT_WAIT;	
+//		}
 		
 		public static String getEnvironment() {
 			Environment = prop.getProperty("environment");
