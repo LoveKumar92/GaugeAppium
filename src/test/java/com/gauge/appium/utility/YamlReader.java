@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.gauge.appium.utility;
 
 import java.io.File;
@@ -15,11 +12,11 @@ import org.yaml.snakeyaml.Yaml;
 @SuppressWarnings("unchecked")
 public class YamlReader {
 
-    public static String yamlFilePath = System.getProperty("user.dir") + File.separator + "resources" + File.separator + "testdata" + File.separator + TestUtil.getEnvironment().toUpperCase() + "_TestData.yml";
+    public static String yamlFilePath = System.getProperty("user.dir") + File.separator + "resources" + File.separator + "testdata" + File.separator + ConfigReader.getConfigValue("environment").toUpperCase() + "_TestData.yml";
   
     public static String setYamlFilePath() {
         if (yamlFilePath.isEmpty()) {
-            yamlFilePath = yamlFilePath.replaceAll("XXX", TestUtil.getEnvironment().toUpperCase().replace("/", ""));
+            yamlFilePath = yamlFilePath.replaceAll("XXX", ConfigReader.getConfigValue("environment").toUpperCase().replace("/", ""));
         }
         System.out.println("Yaml init: " + yamlFilePath);
         return yamlFilePath;

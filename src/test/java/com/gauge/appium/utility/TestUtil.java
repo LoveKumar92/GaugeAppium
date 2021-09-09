@@ -3,7 +3,6 @@ package com.gauge.appium.utility;
 import static org.testng.Assert.fail;
 
 import java.util.NoSuchElementException;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -22,19 +21,6 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 		
 		public static TestBase testBase= TestBase.getInstance();
 		public AndroidDriver<AndroidElement> driver = testBase.getDriver();
-		public static Properties prop = testBase.getConfig();
-		public static int IMPLICIT_WAIT = Integer.valueOf(prop.getProperty("Implicit_time"));
-		public static String Environment;
-		
-//		public static int getImplicitTime() {
-//			IMPLICIT_WAIT = Integer.valueOf(prop.getProperty("Implicit_time"));
-//			return IMPLICIT_WAIT;	
-//		}
-		
-		public static String getEnvironment() {
-			Environment = prop.getProperty("environment");
-			return Environment;	
-		}
 		
 		public static void waitTOSync() {
 			try {
@@ -63,7 +49,7 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 			catch(NoSuchElementException e) {
 				flag = false;
 			}
-			resetImplicitTimeout(IMPLICIT_WAIT);
+			resetImplicitTimeout(Integer.valueOf("Implicit_time"));
 			return flag;
 		}
 		
