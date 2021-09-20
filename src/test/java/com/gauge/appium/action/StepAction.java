@@ -18,7 +18,6 @@ public class StepAction extends TestUtil {
 	public void clickOnSearchField() {
 		getElementWhenVisible(searchBox).click();
 		TestUtil.log("[INFO]: User click on search box of app");
-		
 	}
 
 	public void enterSearchText(String searchedText) {

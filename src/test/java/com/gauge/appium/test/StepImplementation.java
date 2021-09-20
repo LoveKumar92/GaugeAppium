@@ -6,8 +6,6 @@ import com.thoughtworks.gauge.Step;
 
 import java.net.MalformedURLException;
 
-import org.testng.annotations.AfterClass;
-
 
 public class StepImplementation {
 	
@@ -15,10 +13,10 @@ public class StepImplementation {
 		TestBase testBase = TestBase.getInstance();
 			
 
-    @Step("Launch You tube app over android Device")
-    public void launhcAndroidApp() throws MalformedURLException {	
-    	testBase.getDriver();
-        }
+//    @Step("Launch You tube app over android Device")
+//    public void launhcAndroidApp() throws MalformedURLException {	
+//    	testBase.getDriver();
+//        }
 
     @Step("Enter text <Vr Studio A Wedding Highlight 02 Love> in search box")
     public void SearchVideo(String SearchedText) {
@@ -31,5 +29,4 @@ public class StepImplementation {
     	stepAction.verifysearchResults(ResultedVideo);
     	stepAction.clickToPlaySearchedVideo();
         }
-    
 }

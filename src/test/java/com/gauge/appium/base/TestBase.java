@@ -7,13 +7,15 @@ import static com.gauge.appium.utility.ConfigReader.getConfigValue;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import com.gauge.appium.utility.TestUtil;
-import com.thoughtworks.gauge.AfterSpec;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -25,7 +27,6 @@ public class TestBase {
 	private static TestBase testBase = null;
 	private static AndroidDriver<AndroidElement> driver;
 
-	
 	private TestBase() {
 		try {
 			intializeConfigFile();
@@ -46,8 +47,9 @@ public class TestBase {
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		capabilities.setCapability("adbExecTimeout", Integer.valueOf(getConfigValue("AppConnectionTime")));
 //		capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
-        capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.google.android.youtube");
-    	capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,"com.google.android.apps.youtube.app.WatchWhileActivity");
+		capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.google.android.youtube");
+		capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,
+				"com.google.android.apps.youtube.app.WatchWhileActivity");
 		driver = new AndroidDriver<AndroidElement>(new URL(getConfigValue("appiumServerAddress")), capabilities);
 		driver.manage().timeouts().implicitlyWait(Integer.valueOf(getConfigValue("Implicit_time")), TimeUnit.SECONDS);
 		TestUtil.log("[INFO]: Connected");
@@ -65,18 +67,26 @@ public class TestBase {
 		}
 		return driver;
 	}
-	
+
 	public static TestBase getInstance() {
 		if (testBase == null) {
 			testBase = new TestBase();
 		}
 		return testBase;
 	}
-	
-	@AfterSpec
+
 	public void closeBrowsers() {
 		driver.quit();
 		TestUtil.log("[INFO]: Session completed");
+	}
+
+	public static void clearLogs() {
+		try {
+			FileUtils.cleanDirectory(new File("logs//"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		TestUtil.log("[INFO] : Clean logs from previous run");
 	}
 
 }
